@@ -28,7 +28,7 @@ int main() {
             output_file << givenmatrix[i][j];
             output_file << " ";
         }
-        cout << "\n";
+        output_file << "\n";
     }
  
     return 0;
