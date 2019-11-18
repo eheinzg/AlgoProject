@@ -5,6 +5,9 @@
 using namespace std;
 
 int main() {
+    int x, y;
+    int** givenmatrix;
+    
     ifstream input_file;        // create input file stream object
     ofstream output_file;       // create output file stream object
     
@@ -19,7 +22,14 @@ int main() {
     
     // write to outputfile
     output_file.open("output.txt");
-    // output_file << 
     
+    for (int i = 0; i < x; i ++){
+        for (int j = 0; j < y; j++){
+            output_file << givenmatrix[i][j];
+            output_file << " ";
+        }
+        cout << "\n";
+    }
+ 
     return 0;
 }
